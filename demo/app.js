@@ -1,9 +1,9 @@
 'use strict';
 require.config({
   paths: {
-    'zepto': '/bower_components/zepto/zepto',
-    'anim': './anim',
-    'async': '/test/async/lib/async'
+    'zepto': './bower_components/zepto/zepto',
+    'anim': './../anim',
+    'async': './bower_components/async/lib/async'
   },
   shim: {
     'zepto': {
@@ -14,7 +14,6 @@ require.config({
 
 define(['zepto', 'anim', 'async'], function($, $1, async) {
 
-  var container = $('.container');
   var names = ['lightSpeedIn', 'lightSpeedOut', 'rotateInDownLeft', 'rotateOutUpRight', 'fadeInLeft', 'fadeOutRight', 'fadeIn', 'fadeOut', 'bounceIn', 'bounce', 'zoomIn'];
   var elem = $('.elem').addClass('elem-big');
   var button = $('.button');
