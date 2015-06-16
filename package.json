@@ -1,0 +1,24 @@
+{
+  "author": "zhouningyi <zny918@126.com>",
+  "name": "anim",
+  "description": "css动画库",
+  "repository":{
+    "type": "git",
+    "url": "git@github.com:zhouningyi/anim.git"
+    },
+  "version": "0.0.1",
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "IE": ">8",
+    "chrome": ">20",
+    "safari": "*",
+    "firefox": "*"
+  },
+  "dependencies": {
+    "jquery": "^2.1.3",
+  },
+  "devDependencies": {
+  },
+}
