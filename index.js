@@ -20,6 +20,7 @@
 }(this, function($) {
 
   $.fn.keyAnim = function(keyframe, opt) {
+    opt = opt || {};
     var time = opt.time || 1;
     var count = opt.count || 1;
     var node = $(this);
