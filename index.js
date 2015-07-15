@@ -77,6 +77,13 @@
    */
   $.fn.clearAnim = function () {
     var node = $(this);
+    
+    if(node[0] && node[0].style){
+      var style = node[0].style;
+      style.webkitAnimationName = '';
+      style.animationName = '';
+    }
+    
     var nodeStyle = node.attr('style');
     var search, aniStyle;
     for (var k in aniStyles) {
