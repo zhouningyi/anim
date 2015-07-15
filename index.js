@@ -51,7 +51,7 @@
     };
     node.css(anim);
     if (cb) {
-      node.off('webkitAnimationEnd animationend').one('webkitAnimationEnd animationend', cb);
+      node.off('webkitAnimationEnd animationend').on('webkitAnimationEnd animationend', cb);
     }
     return this;
   };
@@ -87,5 +87,6 @@
     node.attr('style', nodeStyle);
     return this;
   };
+   $.fn.clearKeyAnim =  $.fn.removeAnim =   $.fn.removeKeyAnim = $.fn.clearAnim;
   return $;
 });
